@@ -11,6 +11,6 @@ public class TestaDoacao {
 		Endereco endereco1 = new Endereco("Rua dos Vira-Latas", "23", "", "Campo Grande", "Rio de Janeiro", "RJ", "Brasil");
 		pessoa1.setEndereco(endereco1);
 		
-		System.out.println(pessoa1.exibirDestinatario());
+		System.out.println(pessoa1.toString());
 	}
 }
