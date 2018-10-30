@@ -42,16 +42,9 @@ public class PessoaController extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		PrintWriter out = response.getWriter();
 
-		if (pessoas.isEmpty()) {
-			out.println("Não existem pessoas cadastradas");
-		} else {
-			for (Pessoa pessoa : pessoas) {
-				out.println("<h4>" + pessoa.toString() + "</h4>");
-			}
-		}
-		doGet(request, response);
+		request.setAttribute("lista", pessoas);
+		request.getRequestDispatcher("relatorio.jsp").forward(request, response);
 
 	}
 }

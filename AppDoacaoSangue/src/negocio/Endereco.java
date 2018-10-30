@@ -74,11 +74,6 @@ public class Endereco {
 		this.setPais(pais);
 	}
 	
-//	Crie os seguintes atributos na classe Endereco:
-//	logradouro, numero, complemento, bairro, municipio, estado, pais, todos do tipo String.
-//	Um construtor com 7 parâmetros, homônimos aos atributos, e cujos valores serão atribuídos aos atributos.
-//	Um método imprimir que imprime o endereço no seguinte formato:
-//	“Rua São José, 90 - sala 101, Centro, Rio de Janeiro - RJ - Brasil”.
 	
 	public String imprimir() {
 		return String.format("%s, %s - %s, %s %s - %s - %s", 
